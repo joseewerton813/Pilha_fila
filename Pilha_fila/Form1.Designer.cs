@@ -36,6 +36,8 @@
             RemoverFila = new Button();
             textPilha = new TextBox();
             textFila = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // Pilha
@@ -47,7 +49,6 @@
             Pilha.Name = "Pilha";
             Pilha.Size = new Size(301, 274);
             Pilha.TabIndex = 0;
-            
             // 
             // Fila
             // 
@@ -58,7 +59,6 @@
             Fila.Name = "Fila";
             Fila.Size = new Size(301, 274);
             Fila.TabIndex = 1;
-            
             // 
             // Adicionarpilha
             // 
@@ -106,7 +106,6 @@
             textPilha.Name = "textPilha";
             textPilha.Size = new Size(191, 23);
             textPilha.TabIndex = 6;
-            
             // 
             // textFila
             // 
@@ -114,13 +113,32 @@
             textFila.Name = "textFila";
             textFila.Size = new Size(191, 23);
             textFila.TabIndex = 7;
-            
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 55);
+            label1.Name = "label1";
+            label1.Size = new Size(33, 15);
+            label1.TabIndex = 8;
+            label1.Text = "Pilha";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(487, 55);
+            label2.Name = "label2";
+            label2.Size = new Size(25, 15);
+            label2.TabIndex = 9;
+            label2.Text = "Fila";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(textFila);
             Controls.Add(textPilha);
             Controls.Add(RemoverFila);
@@ -145,5 +163,7 @@
         private Button RemoverFila;
         private TextBox textPilha;
         private TextBox textFila;
+        private Label label1;
+        private Label label2;
     }
 }
